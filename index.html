@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <div class="grid">  
+            <div class="sidebar">
+                <div class="sidebar-logo">
+                <img style="width: 19rem;";  src="HomeApp-logo-v2.png">
+                <!-- <div class="logo-text">
+                    <img style="width: 45px; height: 45px;" src="./images/home-assistant.svg">
+                <h1>HomeApp</h1>
+                </div> -->
+                </div>
+                <div class="lists-items">
+                    <!-- Icono de inico -->
+                    <div data-link="#" class="icon-text"> 
+
+                        <img style="width: 24px; height: 24px;" src="./images/home.svg">
+                        <!-- <p><strong>Inicio</strong></p> -->
+                        <a href="./index.html"><strong>Inicio</strong></a>                        
+                    </div>
+                    <!-- Icono de Perfil -->
+                    <div class="icon-text">
+                        <img style="width: 24px; height: 24px;" src="./images/account.svg" >
+                        <!-- <p><strong>Perfil</strong></p> -->
+                        <a href="./perfil.html"><strong>Perfil</strong></a>  
+                    </div>
+                    <!-- Icono de Tareas -->
+                    <div class="icon-text"> 
+                        <img style="width: 24px; height: 24px;" src="./images/list-box-outline.svg" >
+                        <a href="./todo.html"><strong>Listas de Tareas</strong></a>
+                    </div>
+                    <!-- Icono de Inventarios -->
+                    <div class="icon-text">
+                        <img style="width: 24px; height: 24px;" src="./images/treasure-chest-outline.svg" >
+                        <p><strong>Mi Alacena</strong></p>
+                    </div>
+                    <!-- Icono de Mensajes -->
+                    <div class="icon-text">
+                        <img style="width: 24px; height: 24px;" src="./images/message-processing-outline.svg">
+                        <p><strong>Mensajes</strong></p>
+                    </div>
+                    <!-- Icono de Historial -->
+                    <div class="icon-text">
+                        <img style="width: 24px; height: 24px;" src="./images/history.svg">
+                        <p><strong>Historial</strong></p>
+                    </div>
+                </div>
+                    <!-- Icono de Configuración -->
+                <div class="list-items-bottom">
+                    <div class="icon-text">
+                        <img style="width: 24px; height: 24px;" src="./images/cog-outline.svg">
+                        <p><strong>Configuración</strong></p>
+                    </div>
+                    <!-- Icono de Soporte -->
+                    <div class="icon-text">
+                        <img style="width: 24px; height: 24px;" src="./images/face-agent.svg" >
+                        <p><strong>Contactanos</strong></p>
+                    </div>
+                </div>
+                
+                <div class="lists-items"></div>
+            </div>
+            <div class="main">
+                <div class="header">
+                    <div class="navbar">
+                        <img style="width:24px; height:24px;" src="./images/magnify.svg">
+                            <input type="text" class="form-input">
+                        <img style="width:24px; height:24px;" src="./images/bell-outline.svg" class="notification">
+                        <img src="./images/avatar.jpeg" alt="PFP" width="50px" class="profile-picture">
+                        <h3>Abner Quixote</h3>
+                    </div>
+                    <div class="welcome">
+                        <div class="left">
+                         <img src="./images/avatar.jpeg" alt="Profile Picture" width="65px" class="profile-picture">
+                            <div class="welcome-text">
+                                <p>Hola,</p>
+                                <h3>Abner Quixote (@abnquixote)</h3>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <button class="btn-header">Publicar</button>
+                            <button class="btn-header">Aviso</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="lado-a">
+                        <div class="bloque-principal">
+                            <h4>Recordatorios</h4>
+                            <div class="aviso">
+                                <div class="color-block"></div>
+                                <div class="text-block">
+                                    <h5 class="nombre-aviso">Cita: Ir al odontólogo.</h5>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi reprehenderit, fugiat consequatur saepe, ea sint ipsum aliquam hic dolorum velit tenetur, eligendi eaque et at esse sequi autem ut harum.</p>
+                                </div>
+                                <div class="bloque-accion">
+                                    <h5 class="fecha-aviso">Viernes - 0/00/0000</h5>
+                                    <img style="height: 2rem;" src="./images/check-outline.svg">
+                                    <img style="height: 2rem;" src="./images/trash-can-outline.svg">
+                                    <img style="height: 2rem;" src="./images/share-outline.svg">
+                                </div>
+                            </div>
+                            <div class="aviso">
+                                <div class="color-block"></div>
+                                <div class="text-block">
+                                    <h5 class="nombre-aviso">Colegio: Realizar Maqueta.</h5>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi reprehenderit, fugiat consequatur saepe, ea sint ipsum aliquam hic dolorum velit tenetu....</p>
+                                </div>
+                                <div class="bloque-accion">
+                                    <h5 class="fecha-aviso">Sábado - 0/00/0000</h5>
+                                    <img style="height: 2rem;" src="./images/check-outline.svg">
+                                    <img style="height: 2rem;" src="./images/trash-can-outline.svg">
+                                    <img style="height: 2rem;" src="./images/share-outline.svg">
+                                </div>
+                            </div>
+                            <div class="aviso">
+                                <div class="color-block"></div>
+                                <div class="text-block">
+                                    <h5 class="nombre-aviso">@vergilius: Cumpleaños a la vuelta de la esquina.</h5>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi reprehenderit, fugiat consequatur....</p>
+                                </div>
+                                <div class="bloque-accion">
+                                    <h5 class="fecha-aviso">Lunes - 0/00/0000</h5>
+                                    <img style="height: 2rem;" src="./images/check-outline.svg">
+                                    <img style="height: 2rem;" src="./images/trash-can-outline.svg">
+                                    <img style="height: 2rem;" src="./images/share-outline.svg">
+                                </div>
+                            </div>
+                            <div class="aviso">
+                                <div class="color-block"></div>
+                                <div class="text-block">
+                                    <h5 class="nombre-aviso">Casa: Asado en el patio.</h5>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi reprehenderit, fugiat consequatur....</p>
+                                </div>
+                                <div class="bloque-accion">
+                                    <h5 class="fecha-aviso">Miercoles - 0/00/0000</h5>
+                                    <img style="height: 2rem;" src="./images/check-outline.svg">
+                                    <img style="height: 2rem;" src="./images/trash-can-outline.svg">
+                                    <img style="height: 2rem;" src="./images/share-outline.svg">
+                                </div>
+                            </div>
+                            <div class="aviso">
+                                <div class="color-block"></div>
+                                <div class="text-block">
+                                    <h5 class="nombre-aviso">Casa: Pintar la casa.</h5>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit......</p>
+                                </div>
+                                <div class="bloque-accion">
+                                    <h5 class="fecha-aviso">Viernes - 0/00/0000</h5>
+                                    <img style="height: 2rem;" src="./images/check-outline.svg">
+                                    <img style="height: 2rem;" src="./images/trash-can-outline.svg">
+                                    <img style="height: 2rem;" src="./images/share-outline.svg">
+                                </div>
+                            </div>
+                            <div class="aviso">
+                                <div class="color-block"></div>
+                                <div class="text-block">
+                                    <h5 class="nombre-aviso">Familia: Arreglar maletas para viajar.</h5>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi reprehenderit, fugiat consequatur....</p>
+                                </div>
+                                <div class="bloque-accion">
+                                    <h5 class="fecha-aviso">Jueves - 0/00/0000</h5>
+                                    <img style="height: 2rem;" src="./images/check-outline.svg">
+                                    <img style="height: 2rem;" src="./images/trash-can-outline.svg">
+                                    <img style="height: 2rem;" src="./images/share-outline.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lado-b">
+                         <div class="tareaspendientes-y-miembros">
+                            <div class="tarespendientes">
+                                <h4>Tareas pendientes</h4>
+                                <div class="record-container">
+                                    <div class="recordatorio">
+                                            <h6>test1</h6>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam doloremque laborum dolores nostrum, a adipisci atque fugiat! Iusto cum facere sapiente incidunt a, dignissimos in, fuga reprehenderit doloribus quo dicta.</p>
+                                        <div class="record-borde"></div>
+                                    </div>
+                                    <div class="recordatorio">
+                                            <h6>test2</h6>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias repellat impedit.....</p>
+                                        <div class="record-borde"></div>
+                                    </div>
+                                    <div class="recordatorio">
+                                            <h6>test3</h6>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam debitis ab ad non error fugit recusandae obcaecati excepturi sapiente vitae tempora.....</p>
+                                            <div class="record-borde"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="miembros">
+                                <h4>Miembros</h4>
+                            </div>
+                            <div class="miembros-contenido">
+                                <div class="miembro">
+                                    <img class="miembro-pfp" src="./images/member1.png" alt="vergilius">
+                                    <p>
+                                        <span class="miembro-nombre">@vergilius</span>
+                                        <br>
+                                        <span class="miembro-texto">Les deseo una muy bonita tarde.</span>
+                                    </p>
+                                </div>
+                                <div class="miembro"></div>
+                                <div class="miembro"></div>
+                                <div class="miembro"></div>
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

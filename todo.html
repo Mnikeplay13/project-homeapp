@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./todo-list-main/dist/style.css">
+    <script src="./todo-list-main/dist/main.js" defer></script>
+</head>
+
+<body>
+    <div class="cont-sidebar">
+    <div class="sidebar">
+        <div class="sidebar-logo">
+        <img style="width: 19rem;";  src="HomeApp-logo-v2.png">
+        <!-- <div class="logo-text">
+            <img style="width: 45px; height: 45px;" src="./images/home-assistant.svg">
+        <h1>HomeApp</h1>
+        </div> -->
+        </div>
+        <div class="lists-items">
+            <!-- Icono de inico -->
+            <div data-link="#" class="icon-text"> 
+
+                <img style="width: 24px; height: 24px;" src="./images/home.svg">
+                <!-- <p><strong>Inicio</strong></p> -->
+                <a href="./index.html"><strong>Inicio</strong></a>                        
+            </div>
+            <!-- Icono de Perfil -->
+            <div class="icon-text">
+                <img style="width: 24px; height: 24px;" src="./images/account.svg" >
+                <!-- <p><strong>Perfil</strong></p> -->
+                <a href="./perfil.html"><strong>Perfil</strong></a>  
+            </div>
+            <!-- Icono de Tareas -->
+            <div class="icon-text"> 
+                <img style="width: 24px; height: 24px;" src="./images/list-box-outline.svg" >
+                <a href="./todo.html"><strong>Listas de Tarea</strong></a>
+            </div>
+            <!-- Icono de Inventarios -->
+            <div class="icon-text">
+                <img style="width: 24px; height: 24px;" src="./images/treasure-chest-outline.svg" >
+                <p><strong>Mi Alacena</strong></p>
+            </div>
+            <!-- Icono de Mensajes -->
+            <div class="icon-text">
+                <img style="width: 24px; height: 24px;" src="./images/message-processing-outline.svg">
+                <p><strong>Mensajes</strong></p>
+            </div>
+            <!-- Icono de Historial -->
+            <div class="icon-text">
+                <img style="width: 24px; height: 24px;" src="./images/history.svg">
+                <p><strong>Historial</strong></p>
+            </div>
+        </div>
+            <!-- Icono de Configuración -->
+        <div class="list-items-bottom">
+            <div class="icon-text">
+                <img style="width: 24px; height: 24px;" src="./images/cog-outline.svg">
+                <p><strong>Configuración</strong></p>
+            </div>
+            <!-- Icono de Soporte -->
+            <div class="icon-text">
+                <img style="width: 24px; height: 24px;" src="./images/face-agent.svg" >
+                <p><strong>Contactanos</strong></p>
+            </div>
+        </div>
+        
+        <div class="lists-items"></div>
+    </div>
+    </div>
+    
+    <div class="cont-todo-list">
+    <div class="overlay-add" id="overlay-add">
+    
+        <form class="todo-form" id="todo-form">
+            <div class="modal-add-header">
+                <h3>Crear una nueva lista de tareas...</h3>
+                <div class="close-modal" id="close-modal">x</div>
+            </div>
+            
+
+            <div class="new-entry">
+                <textarea class="create-new-input" placeholder="Titulo: Pagar la renta" 
+                id="new-todo-title" name="new-todo" maxlength="40" required></textarea>
+                
+                <textarea class="create-new-input create-new-input-big" 
+                placeholder="Detalles: Ej. internet, telefono, renta." id="new-todo-details" 
+                name="new-todo"></textarea>
+                    
+                
+                <div class="create-new-date">
+                    <div class="create-new-date-title">Plazo:</div>
+                    <input type="date" class="create-new-date-input"id="new-todo-date" 
+                    name="new-todo" required>
+                </div>
+
+                <div class="create-new-priority-submit-wrapper">
+                    <div class="create-priority">
+                        
+                        <div class="priority-title">Prioridad:</div>
+                        <input type="radio" id="create-new low"  
+                        name="create-new-priority" value="baja" required>
+                        <label for="create-new low" class="create-new-priority low">Baja</label>
+        
+                        <input type="radio" id="create-new medium" 
+                        name="create-new-priority" value="mediana" required>
+                        <label for="create-new medium" class="create-new-priority medium">Mediana</label>
+        
+                        <input type="radio" id="create-new high" 
+                        name="create-new-priority" value="alta" required>
+                        <label for="create-new high" class="create-new-priority high">Alta</label >
+
+                    </div>   
+                    
+                    <input type="button" class="create-new-todo-submit" id="todo-submit" value="Añadir"> 
+                    
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+    
+    <div class="overlay-edit" id="overlay-edit">
+        <div class="header-ed">
+            <h4 class="header-title">Editar Lista</h4>
+            <div class="close-edit" id="close-edit">x</div>
+        </div>
+        <div class="edit-content" id="edit-content">
+            
+        </div>
+    </div>
+    
+    <div class="overlay-details" id="overlay-details">
+        <div class="header-det">
+            <h4 class="header-title">Detalles</h4>
+            <div class="close-details" id="close-details">x</div>
+        </div>
+        <div class="details-content" id="details-cont">
+           
+        </div>
+    </div>
+    
+    <div class="content" id="content">
+        
+        <header class="header">
+            <h2 class="todo-title">To-Do</h2>
+            <img src="./todo-list-main/dist/images/notebook.svg" alt="Notebook icon">
+        </header>
+        
+        <div class="main-content">
+            <main class="main" id="main">
+            </main>
+        </div>
+        <nav class="side-bar">
+            <button class="new-todo" id="new-todo">+</button>
+        </nav>
+    </div>
+
+
+    <div class="overlay-bg" id="overlay-bg"></div>
+    </div>
+</body>
+</html>
